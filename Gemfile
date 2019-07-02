@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'watir', '~>6.10.0'
+gem 'mysql2', '~>0.3.21'
+gem 'activerecord', '~>5.1.4'
+gem 'google-cloud-firestore'

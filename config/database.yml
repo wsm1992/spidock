@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  collation: utf8mb4_unicode_ci
+  pool: 5
+
+development:
+  <<: *default
+  database: db
+  username: username
+  password: password
+  host: host
+
+#change the connection detail before run
+production:
+  <<: *default
+  database: db
+  username: username
+  password: password
+  host: host
