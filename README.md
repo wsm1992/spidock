@@ -22,4 +22,7 @@ bash run.sh [environment]
 to select diffirent environment
 
 # Spider
-the actual logic in [app/spider.rb](https://github.com/wsm1992/spidock/blob/master/app/spider.rb),you can make a spider with [Watir](https://github.com/watir/watir) libary
+the actual logic in [app/spider.rb](https://github.com/wsm1992/spidock/blob/master/app/spider.rb),you can make your spider with [Watir](https://github.com/watir/watir) libary
+
+
+please enjoy your web crawling
