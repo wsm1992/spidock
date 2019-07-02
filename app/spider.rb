@@ -1,7 +1,7 @@
 module Spidock
   class Spider
     include Spidock::Loggable
-    attr_reader :browser, :email, :password
+    attr_reader :browser
     def initialize(browser)
       @browser = browser
     end
