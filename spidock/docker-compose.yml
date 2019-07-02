@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  spider:
+    build: ./
+    volumes: 
+      - ../:/www/var
+    command: >
+      /bin/bash -c "bundle install --path vendor/bundle;
+        bundle exec ruby process.rb"
+    links:
+      - "firefox:firefox"
+    external_links:
+      - "laradock_mysql_1"
+
+  firefox:
+    image: selenium/standalone-firefox
+    ports: 
+      - "4444:4444"
+    shm_size: 2g
